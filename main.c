@@ -17,7 +17,7 @@ int grille[20][20];
 void RemplirGrille();
 void AfficherGrille();
 int CompterCellulesAdjascentes(int x, int y);
-void AvancerTemps();
+void GrilleSuivante();
 int NouvelEtatCellule(int etatCellule, int cellulesVivantesAutour);
 void RecopierGrille(int grilleOriginale[20][20], int grilleDestination[20][20]);
 
@@ -75,7 +75,7 @@ int CompterCellulesAdjascentes(int x, int y)
 	@brief Met à jour la grille
 	@return le nombre de cellules vivantes, logiquement entre 0 et 8
 **/
-void AvancerTemps()
+void GrilleSuivante()
 {
 	int nouvelleGrille[20][20];
 
